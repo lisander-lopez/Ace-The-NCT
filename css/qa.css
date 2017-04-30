@@ -30,12 +30,12 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background-color: #C4FFE3;
-	
+
 }
 
 .card {
-	width: 320px;
-	height: 260px;
+	width: 300px;
+	height: 240px;
 	padding: 30px;
 	margin: 0 auto;
 	outline: 1px solid black;
@@ -67,12 +67,10 @@ img {
 }
 
 h1 {
-    position: absolute;
-    top: 25px;
-    left: 110px;
+
 }
 
-h2 { 
+h2 {
 	padding: 13px;
 	margin: 1em;
 	}
@@ -86,8 +84,11 @@ h2 {
 .flip-container,
 .front,
 .back {
-  width: 320px;
-  height: 480px;
+  width: 250px;
+  height: 370px;
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .flipper {
   transition: 0.6s;
@@ -107,4 +108,10 @@ h2 {
 }
 .back {
   transform: rotateY(180deg);
+}
+
+.translate-main-text {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 50px;
 }
