@@ -1,0 +1,29 @@
+#content {
+  text-align: center;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+}
+
+#startBtn {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.lead-text {
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+footer[class*="navbar"] {
+  text-align: center;
+}
+
+.about-text {
+    width: 500px;
+    text-align: center;
+    margin-left: 300px;
+}
