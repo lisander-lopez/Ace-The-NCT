@@ -1,3 +1,10 @@
+			<div class="row">
+				<div class="col-sm-12">
+						<h1>{{qC.data[qC.currentQuestion - 1].question}}</h1>
+						<h1>{{qC.data[qC.currentQuestion - 1].answer}}</h1>
+				</div>
+			</div>
+			<ul uib-pagination  boundary-links="true" total-items="qC.data.length" items-per-page="1" previous-text="&lsaquo;" next-text="&rsaquo;" rotate="true" max-size="10" ng-model="qC.currentQuestion" ></ul>
 
       <div class="row">
         <div class="col-sm-12">

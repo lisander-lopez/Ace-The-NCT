@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="aceTheNCT">
+<html lang="en" ng-app="aceTheNCT" ui-router-styles>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,6 @@
   <title>Ace the NCT</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/index.css">
-  
   
 </head>
 <body>
@@ -22,7 +20,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Ace the NCT</a>
+        <a class="navbar-brand" ui-sref="home" ui-sref-active="active">Ace the NCT</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,7 +35,6 @@
   </nav>
 
   <div class="container">
-    
     <ui-view> 
      <i>Loading ....</i>
     </ui-view>
@@ -59,8 +56,16 @@
   </footer>
   
   <!-- Importing my javascript files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="js/angularCSS.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular-touch.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/questions.js"></script>
   <script type="text/javascript" src="js/controllers.js"></script>
+  
+  
 </body>
 </html>
