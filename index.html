@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="aceTheNCT" ui-router-styles>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
   <title>Ace the NCT</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/index.css">
+  
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -20,38 +20,26 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Ace the NCT</a>
+        <a class="navbar-brand" ui-sref="home" ui-sref-active="active">Ace the NCT</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-     <li><a href="index.html">Home</a></li>
-          <li><a href="question.html">Study</a></li>
-          <li><a href="about_us.html">About Us</a></li>
+          <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+          <li><a ui-sref="question" ui-sref-active="active">Study</a></li>
+          <li><a ui-sref="about-us" ui-sref-active="active">About Us</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
   <div class="container">
-    <div id="content">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 class="lead-text"> Welcome to Ace the NCT</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <img src="img/logo.png" alt="LOGO" height="40px" width="40px" id="logo">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <a href="question.html" class="btn btn-default" id="startBtn">Start Acing!</a>
-        </div>
-      </div>
-    </div>
+    
+    <ui-view> 
+     <i>Loading ....</i>
+    </ui-view>
+    
   </div>
 
   <footer class="navbar navbar-default navbar-fixed-bottom">
@@ -59,13 +47,26 @@
       <div class="row">
         <div class=".col-md-12 .col-md-offset-6">
           <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="question.html">Study</a></li>
-          <li><a href="about_us.html">About Us</a></li>
+          <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+          <li><a ui-sref="question" ui-sref-active="active">Study</a></li>
+          <li><a ui-sref="about-us" ui-sref-active="active">About Us</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+  
+  <!-- Importing my javascript files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="js/angularCSS.js"></script>
+  <script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular-touch.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/questions.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  
+  
 </body>
 </html>
